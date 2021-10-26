@@ -14,7 +14,7 @@ const Pokemon = ({ pokemon }) => {
           <span className='fw-bold'>Height:</span> {pokemon?.height} inches
         </div>
         <p className='card-text'>
-          <span className='fw-bold'>Weight:</span> {pokemon?.weight} inches
+          <span className='fw-bold'>Weight:</span> {pokemon?.weight} pounds
         </p>
       </div>
     </div>
