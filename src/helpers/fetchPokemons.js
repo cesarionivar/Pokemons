@@ -1,13 +1,14 @@
-export const getPokemons = async () => {
+export const getPokemons = async (
+  endpoint = 'https://pokeapi.co/api/v2/pokemon?limit=20'
+) => {
   try {
-    const data = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=20`);
+    const data = await fetch(endpoint);
 
     const pokemons = await data.json();
 
-    return pokemons.results;
+    return pokemons;
   } catch (error) {
     console.log('Ha sucedido un error');
-    throw new Error('Error al obtener los datos');
   }
 };
 
@@ -25,6 +26,5 @@ export const getEachPokemon = async (endpoint) => {
     };
   } catch (error) {
     console.log('Ha sucedido un error');
-    throw new Error('Error al obtener los datos');
   }
 };
