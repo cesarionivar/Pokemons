@@ -1,2 +1,0 @@
-html{box-sizing:border-box}*,:after,:before{margin:0;padding:0;box-sizing:inherit}body{font-family:Arial,Helvetica,sans-serif}.grid-pokemones{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));grid-gap:20px;gap:20px}.img-poke{width:100px;height:100px;object-fit:contain;-webkit-filter:drop-shadow(1px 1px 2px #000);filter:drop-shadow(1px 1px 2px black);align-self:center}
-/*# sourceMappingURL=main.86067bdf.chunk.css.map */
